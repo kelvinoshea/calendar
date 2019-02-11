@@ -32,6 +32,7 @@ export default class Day extends Component {
     )
   }
 
+
   render() {
     return (
       <div className={cn(
@@ -40,7 +41,7 @@ export default class Day extends Component {
         this.state.differentMonth ? styles.differentMonth : null,
         this.state.selected ? styles.selected : null,
       )}
-        onClick={() => this.setState({ selected: true })} 
+        onClick={!this.state.differentMonth ? () => this.setState({ selected: true }) : null} 
       >
         <p>{this.props.dayNumber}</p>
         <div className={styles.reminderContainer}>

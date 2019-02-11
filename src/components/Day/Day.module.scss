@@ -11,7 +11,7 @@
   box-shadow: 0 0.1rem 0.75rem $shadow_light;
   transition: 0.2s transform;
 
-  &:hover:not(.differentMonth, .selected) {
+  &:hover:not(.differentMonth):not(.selected) {
     cursor: pointer;
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 0.2rem 1.5rem $shadow_dark;
@@ -22,8 +22,7 @@
   }
 
   &.currentDay {
-    border: 1px solid $pink;
-    box-shadow: 0 0.1rem 0.75rem $shadow_active_light;
+    animation: animateBorder 0.5s ease 1s both;
 
     &:hover {
       box-shadow: 0 0.1rem 1rem $shadow_active_dark;
@@ -47,5 +46,17 @@
   flex-direction: column;
   flex: 1;
   margin-top: 1rem;
+}
+
+@keyframes animateBorder {
+  0% {
+    border: 1px solid $light_grey;
+    box-shadow: 0 0.1rem 0.75rem $shadow_light;
+  }
+
+  100% {
+    border: 1px solid $pink;
+    box-shadow: 0 0.1rem 0.75rem $shadow_active_light;
+  }
 }
 
