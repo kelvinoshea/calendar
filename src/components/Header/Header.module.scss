@@ -1,3 +1,5 @@
+@import '../util/variables.scss';
+
 .header {
   text-align: center;
   padding: 2rem 0;
@@ -7,4 +9,5 @@
 .dayName {
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: $grey;
 }

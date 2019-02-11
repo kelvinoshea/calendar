@@ -2,7 +2,7 @@
 
 .calendar {
   padding: 1rem;
-  max-width: 1400px;
+  max-width: 1600px;
   display: flex;
   flex-direction: column;
 }
@@ -10,7 +10,10 @@
 .month {
   display: flex;
   justify-content: center;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .days {

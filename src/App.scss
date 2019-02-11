@@ -1,5 +1,8 @@
+@import './components/util/variables.scss';
+
 .App {
   text-align: center;
+  color: $deep_purple;
 }
 
 .App-logo {

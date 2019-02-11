@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import styles from './Calendar.module.scss'
 import Day from '../Day'
 import Header from '../Header';
+import Reminder from '../Reminder';
 
 export default class index extends Component {
   static propTypes = {
@@ -44,7 +45,16 @@ export default class index extends Component {
         <div className={styles.dates}>
           <Day
             dayNumber='27'
-          />
+          >
+            <Reminder
+              name="skrrksjf  f dhsjfdjsft"
+              time='2:13 pm'
+            />
+            <Reminder
+              name="skrrksjf  f dhsjfdjsft"
+              time='2:13 pm'
+            />
+          </Day>
           <Day
             dayNumber='28'
           />

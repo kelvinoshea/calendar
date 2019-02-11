@@ -29,6 +29,7 @@ export default class Day extends Component {
       )}>
         <p>{this.props.dayNumber}</p>
         <div className={styles.reminderContainer}>
+          {this.props.children}
         </div>
       </div>
     )
