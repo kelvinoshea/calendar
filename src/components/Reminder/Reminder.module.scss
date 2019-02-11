@@ -1,0 +1,47 @@
+@import '../util/variables.scss';
+
+.reminder {
+  display: flex;
+  border-radius: 4px;
+  background-color: white;
+  transition: 0.1s color;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-width: 1px;
+  border-style: solid;
+
+  &:hover {
+    .name {
+      opacity: 0.75;
+    }
+  }
+}
+
+.colour {
+  width: 0.3rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  padding: 0.5rem;
+  align-items: flex-start;
+}
+
+.name {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.2rem;
+  font-size: 15px;
+  text-align: left;
+  min-height: 18px;
+}
+
+.time {
+  color: $grey;
+  font-size: 14px;
+}
