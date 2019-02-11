@@ -10,6 +10,7 @@ export default class Day extends Component {
 
   state = {
     currentDay: false,
+    differentMonth: false,
     currentDayNumber: new Date(),
   }
 
@@ -19,13 +20,18 @@ export default class Day extends Component {
     if (this.props.dayNumber === dateNumber) {
       this.setState({ currentDay: true })
     }
+
+    if (!this.props.dayNumber) {
+      this.setState({ differentMonth: true })
+    }
   }
 
   render() {
     return (
       <div className={cn(
         styles.day, 
-        this.state.currentDay ? styles.currentDay : null
+        this.state.currentDay ? styles.currentDay : null,
+        this.state.differentMonth ? styles.differentMonth : null,
       )}>
         <p>{this.props.dayNumber}</p>
         <div className={styles.reminderContainer}>

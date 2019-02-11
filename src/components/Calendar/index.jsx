@@ -43,9 +43,7 @@ export default class index extends Component {
           />
         </div>
         <div className={styles.dates}>
-          <Day
-            dayNumber='27'
-          >
+          <Day>
             <Reminder
               name="skrrksjf  f dhsjfdjsft"
               time='2:13 pm'
@@ -55,17 +53,24 @@ export default class index extends Component {
               time='2:13 pm'
             />
           </Day>
+          <Day/>
+          <Day/>
+          <Day/>
+          <Day/>
           <Day
-            dayNumber='28'
+            dayNumber='1'
           />
           <Day
-            dayNumber='29'
+            dayNumber='2'
           />
           <Day
-            dayNumber='30'
+            dayNumber='3'
           />
           <Day
-            dayNumber='31'
+            dayNumber='4'
+          />
+          <Day
+            dayNumber='5'
           />
           <Day
             dayNumber='6'
@@ -101,8 +106,43 @@ export default class index extends Component {
             dayNumber='16'
           />
           <Day
-            dayNumber=''
+            dayNumber='17'
           />
+          <Day
+            dayNumber='18'
+          />
+          <Day
+            dayNumber='19'
+          />
+          <Day
+            dayNumber='20'
+          />
+          <Day
+            dayNumber='21'
+          />
+          <Day
+            dayNumber='22'
+          />
+          <Day
+            dayNumber='23'
+          />
+          <Day
+            dayNumber='24'
+          />
+          <Day
+            dayNumber='25'
+          />
+          <Day
+            dayNumber='26'
+          />
+          <Day
+            dayNumber='27'
+          />
+          <Day
+            dayNumber='28'
+          />
+          <Day/>
+          <Day/>
         </div>
       </div>
     )

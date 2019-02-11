@@ -10,9 +10,9 @@
   border-radius: 0.25rem;
   box-shadow: 0 0.1rem 0.75rem #0b032d1a;
   transition: 0.2s transform;
-  cursor: pointer;
 
-  &:hover {
+  &:hover:not(.differentMonth) {
+    cursor: pointer;
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 0.2rem 1.5rem #0b032d2a;
   }
@@ -32,3 +32,4 @@
   flex: 1;
   margin-top: 1rem;
 }
+

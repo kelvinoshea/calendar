@@ -7,7 +7,9 @@ import Calendar from './components/Calendar';
 class App extends Component {
   render() {
     return (
-      <Calendar/>
+      <div className="App">
+        <Calendar />
+      </div>
     );
   }
 }
