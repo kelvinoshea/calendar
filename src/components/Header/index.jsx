@@ -5,7 +5,7 @@ export default class Header extends Component {
   render() {
     return (
       <div className={styles.header}>
-        <p>{this.props.dayName}</p>
+        <p className={styles.dayName}>{this.props.dayName}</p>
       </div>
     )
   }

@@ -8,15 +8,14 @@
 .days {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-gap: 0.5rem;
+  grid-gap: 1rem;
 }
 
 .dates {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-gap: 0.5rem;
-  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1rem;
+  grid-auto-rows: minmax(1rem, auto);
   justify-content: center;
   align-items: center;
-  background-color: $light-green;
 }

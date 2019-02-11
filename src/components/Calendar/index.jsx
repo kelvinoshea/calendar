@@ -14,42 +14,42 @@ export default class index extends Component {
       <div className={styles.calendar}>
         <div className={styles.days}>
           <Header
-            dayName='Sunday'
+            dayName='Sun'
           />
           <Header
-            dayName='Monday'
+            dayName='Mon'
           />
           <Header
-            dayName='Tuesday'
+            dayName='Tue'
           />
           <Header
-            dayName='Wednesday'
+            dayName='Wed'
           />
           <Header
-            dayName='Thursday'
+            dayName='Thu'
           />
           <Header
-            dayName='Friday'
+            dayName='Fri'
           />
           <Header
-            dayName='Saturday'
+            dayName='Sat'
           />
         </div>
         <div className={styles.dates}>
           <Day
-            dayNumber='1'
+            dayNumber='27'
           />
           <Day
-            dayNumber='2'
+            dayNumber='28'
           />
           <Day
-            dayNumber='3'
+            dayNumber='29'
           />
           <Day
-            dayNumber='4'
+            dayNumber='30'
           />
           <Day
-            dayNumber='5'
+            dayNumber='31'
           />
           <Day
             dayNumber='6'

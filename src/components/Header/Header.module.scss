@@ -1,6 +1,10 @@
 .header {
   text-align: center;
   padding: 2rem 0;
-  // background-color: red;
   max-height: 1rem;
+}
+
+.dayName {
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }

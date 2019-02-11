@@ -4,7 +4,16 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  border: 1px solid red;
+  background-color: $light_blue;
   height: 10rem;
-  padding: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.1rem 0.75rem #0b032d1a;
+  transition: 0.2s transform;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0.2rem 1.5rem #0b032d2a;
+  }
 }
