@@ -28,6 +28,8 @@ export default class Day extends Component {
         this.state.currentDay ? styles.currentDay : null
       )}>
         <p>{this.props.dayNumber}</p>
+        <div className={styles.reminderContainer}>
+        </div>
       </div>
     )
   }

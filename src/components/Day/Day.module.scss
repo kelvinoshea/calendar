@@ -25,3 +25,10 @@
     border: 1px solid $pink;
   }
 }
+
+.reminderContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 1rem;
+}
