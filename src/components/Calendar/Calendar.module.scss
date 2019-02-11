@@ -1,10 +1,22 @@
 @import '../util/variables.scss'; 
 
 .calendar {
-  display: flex;
+  padding: 1rem;
+  max-width: 1400px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 0.5rem;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 0.5rem;
+  grid-auto-rows: minmax(100px, auto);
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 50vh;
   background-color: $light-green;
 }
