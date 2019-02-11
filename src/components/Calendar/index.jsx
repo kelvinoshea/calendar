@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import dateFns from "date-fns"
 import PropTypes from 'prop-types'
 import styles from './Calendar.module.scss'
 import Day from '../Day'
@@ -9,9 +10,14 @@ export default class index extends Component {
     prop: PropTypes
   }
 
+  state = {
+    currentMonth: new Date()
+  }
+
   render() {
     return (
       <div className={styles.calendar}>
+        <div className={styles.month}>{dateFns.format(this.state.currentMonth, "MMMM")}</div>
         <div className={styles.days}>
           <Header
             dayName='Sun'

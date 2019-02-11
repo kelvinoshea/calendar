@@ -3,6 +3,14 @@
 .calendar {
   padding: 1rem;
   max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.month {
+  display: flex;
+  justify-content: center;
+  font-size: 1.25rem;
 }
 
 .days {
