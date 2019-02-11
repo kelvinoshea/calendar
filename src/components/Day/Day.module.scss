@@ -4,17 +4,17 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  background-color: $light_blue;
+  background-color: $light_grey;
   height: 10rem;
   padding: 1rem;
   border-radius: 0.25rem;
-  box-shadow: 0 0.1rem 0.75rem #0b032d1a;
+  box-shadow: 0 0.1rem 0.75rem $shadow_light;
   transition: 0.2s transform;
 
-  &:hover:not(.differentMonth) {
+  &:hover:not(.differentMonth, .selected) {
     cursor: pointer;
     transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 0.2rem 1.5rem #0b032d2a;
+    box-shadow: 0 0.2rem 1.5rem $shadow_dark;
   }
 
   &:active {
@@ -23,6 +23,22 @@
 
   &.currentDay {
     border: 1px solid $pink;
+    box-shadow: 0 0.1rem 0.75rem $shadow_active_light;
+
+    &:hover {
+      box-shadow: 0 0.1rem 1rem $shadow_active_dark;
+    }
+  }
+
+  &.selected {
+    transform: scale(3);
+    font-size: 8px;
+  }
+
+  &.differentMonth {
+    background-color: transparent;
+    border: 1px solid $shadow_light;
+    box-shadow: none;
   }
 }
 

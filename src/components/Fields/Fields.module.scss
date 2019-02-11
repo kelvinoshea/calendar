@@ -1,0 +1,87 @@
+@import '../util/variables.scss';
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  transition: 0.2s all;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0.25rem 0.5rem 0.25rem 0;
+  border-bottom: 1px solid transparent;
+  transition: 0.1s all;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+
+  &::placeholder {
+    font-weight: 400;
+  }
+
+  &:focus {
+    border-bottom: 1px solid $pink;
+  }
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selects {
+  display: flex;
+  justify-content: space-between;
+}
+
+.colourPicker {
+  width: 1rem;
+  height: 1rem;
+}
+
+select {
+  background: transparent;
+  border: 0;
+  outline: none;
+  transition: 0.1s all;
+  border-radius: 0;
+  flex: 1;
+  margin-right: 0.5rem;
+
+  option {
+    font-size: 16px;
+  }
+
+  &:focus {
+    border-bottom: 1px solid $pink;
+  }
+}
+
+button {
+  background: none;
+  border: 0;
+  outline: none;
+  transition: 0.2s all;
+  cursor: pointer;
+
+  &.primary {
+    background: $green;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 10rem;
+    flex-grow: 0;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}

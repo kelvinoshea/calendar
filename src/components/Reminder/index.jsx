@@ -4,10 +4,8 @@ import styles from './Reminder.module.scss'
 export default class Reminder extends Component {
   render() {
     return (
-      <div className={styles.reminder}>
-        <div className={styles.colour}>
-          {this.props.colour}
-        </div>
+      <div className={styles.reminder} style={{ borderColor: this.props.colour }}>
+        <div className={styles.colour} style={{ backgroundColor: this.props.colour }} />
         <div className={styles.details}>
           <div className={styles.name}>
             {this.props.name}

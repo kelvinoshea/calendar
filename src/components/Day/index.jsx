@@ -1,17 +1,15 @@
 import React, { Component } from 'react'
 import cn from 'classnames'
 import dateFns from "date-fns"
-import PropTypes from 'prop-types'
 import styles from './Day.module.scss';
+import Fields from '../Fields';
 export default class Day extends Component {
-  static propTypes = {
-    prop: PropTypes
-  }
 
   state = {
     currentDay: false,
     differentMonth: false,
     currentDayNumber: new Date(),
+    selected: false, 
   }
 
   componentDidMount() {
@@ -26,16 +24,31 @@ export default class Day extends Component {
     }
   }
 
+  renderInputs() {
+    return (
+      <Fields
+        onClickCancel={console.log('skrrrt')}
+      />
+    )
+  }
+
   render() {
     return (
       <div className={cn(
         styles.day, 
         this.state.currentDay ? styles.currentDay : null,
         this.state.differentMonth ? styles.differentMonth : null,
-      )}>
+        this.state.selected ? styles.selected : null,
+      )}
+        onClick={() => this.setState({ selected: true })} 
+      >
         <p>{this.props.dayNumber}</p>
         <div className={styles.reminderContainer}>
-          {this.props.children}
+          {
+            this.state.selected ?
+              this.renderInputs()
+              : this.props.children
+          }
         </div>
       </div>
     )

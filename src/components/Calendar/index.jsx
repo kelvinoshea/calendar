@@ -1,15 +1,11 @@
 import React, { Component } from 'react'
 import dateFns from "date-fns"
-import PropTypes from 'prop-types'
 import styles from './Calendar.module.scss'
 import Day from '../Day'
 import Header from '../Header';
 import Reminder from '../Reminder';
 
-export default class index extends Component {
-  static propTypes = {
-    prop: PropTypes
-  }
+export default class Calendar extends Component {
 
   state = {
     currentMonth: new Date()
@@ -43,16 +39,7 @@ export default class index extends Component {
           />
         </div>
         <div className={styles.dates}>
-          <Day>
-            <Reminder
-              name="skrrksjf  f dhsjfdjsft"
-              time='2:13 pm'
-            />
-            <Reminder
-              name="skrrksjf  f dhsjfdjsft"
-              time='2:13 pm'
-            />
-          </Day>
+          <Day/>
           <Day/>
           <Day/>
           <Day/>
@@ -80,7 +67,13 @@ export default class index extends Component {
           />
           <Day
             dayNumber='8'
-          />
+          >
+            <Reminder
+              name="Coffee meeting"
+              time='9:00 am'
+              colour="#ffb997"
+            />
+          </Day>
           <Day
             dayNumber='9'
           />
@@ -113,7 +106,13 @@ export default class index extends Component {
           />
           <Day
             dayNumber='19'
-          />
+          >
+            <Reminder
+              name="Interview"
+              time='2:00 pm'
+              colour="#1c819e"
+            />
+          </Day>
           <Day
             dayNumber='20'
           />
