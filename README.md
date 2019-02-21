@@ -1,1 +1,1 @@
-A (somewhat) functional calendar.
+A (somewhat) functional calendar - work in progress
